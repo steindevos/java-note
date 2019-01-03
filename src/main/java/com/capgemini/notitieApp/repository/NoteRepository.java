@@ -24,7 +24,7 @@ public class NoteRepository {
     }
 
     // CREATE
-    private static void save(Note newNote) {
+    public static void save(Note newNote) {
         noteMap.put(++id, newNote);
     }
 
