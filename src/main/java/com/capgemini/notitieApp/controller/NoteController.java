@@ -16,8 +16,8 @@ public class NoteController {
     private NoteRepository noteRepository;
 
     @RequestMapping(method = RequestMethod.GET)
-    public Iterable<Note> getAllNotes() {
-        return noteRepository.findAllNotes();
+    public Iterable<Note> getAll() {
+        return noteRepository.findAll();
     }
 
     @RequestMapping(method = RequestMethod.POST)
